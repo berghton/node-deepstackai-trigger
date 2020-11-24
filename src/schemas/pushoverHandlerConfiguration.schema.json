@@ -23,6 +23,26 @@
       "minLength": 1,
       "examples": ["Front door: {{formattedPredictions}}"]
     },
+    "url": {
+      "description": "A supplementary URL to show with your message.",
+      "type": "string",
+      "minLength": 1,
+      "examples": ["http://192.168.40.50:81/mjpeg/office_hd/video.mjpg"]
+    },
+    "url_title": {
+      "description": "A title for your supplementary URL, otherwise just the URL is shown.",
+      "type": "string",
+      "minLength": 1,
+      "examples": ["Live stream"]
+    },
+    "priority": {
+      "description": "Send as -2 to generate no notification/alert, -1 to always send as a quiet notification, 1 to display as high-priority and bypass the user's quiet hours, or 2 to also require confirmation from the user",
+      "type": "number",
+      "default": 0,
+      "minimum": -2,
+      "maximum": 2,
+      "examples": [1]
+    },
     "sound": {
       "description": "Pushover notification sound to play. If unspecified the Pushover default is used. See https://pushover.net/api#sounds to play each of the sounds.",
       "type": "string",

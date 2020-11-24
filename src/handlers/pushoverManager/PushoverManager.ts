@@ -89,6 +89,9 @@ export async function processTrigger(
     imageFileName: imageFileName,
     message: caption,
     sound: trigger.pushoverConfig.sound,
+    url: trigger.pushoverConfig.url,
+    url_title: trigger.pushoverConfig.url_title,
+    priority: trigger.pushoverConfig.priority,
   });
 
   // Send all the messages.

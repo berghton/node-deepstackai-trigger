@@ -23,6 +23,18 @@ export default class PushoverMessage {
    * The Pushover notification sound to play. Default is "pushover".
    */
   public sound?: string;
+  /**
+   * URL
+   */
+  public url: string;
+  /**
+   * URL title
+   */
+  public url_title: string;
+  /**
+   * Priority
+   */
+  public priority: number;
 
   constructor(init?: Partial<PushoverMessage>) {
     Object.assign(this, init);

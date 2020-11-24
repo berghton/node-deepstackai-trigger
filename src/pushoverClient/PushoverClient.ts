@@ -42,6 +42,9 @@ export default class PushoverClient {
       user: this.userKey,
       message: message.message,
       sound: message.sound,
+      url: message.url,
+      url_title: message.url_title,
+      priority: message.priority,
       attachment: fs.createReadStream(message.imageFileName),
     };
 

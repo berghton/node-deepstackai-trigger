@@ -9,6 +9,9 @@ export default class PushoverConfig {
   public cooldownTime: number;
   public annotateImage?: boolean;
   public sound?: string;
+  public url: string;
+  public url_title: string;
+  public priority: number;
 
   constructor(init?: Partial<PushoverConfig>) {
     Object.assign(this, init);
