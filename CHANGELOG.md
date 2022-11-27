@@ -1,5 +1,43 @@
 # Change Log
 
+## 5.8.5
+
+- Address security vulnerabilities in dependent packages. Resolves [issue 443](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/443) and
+[issue 444](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/444).
+
+## 5.8.4
+
+- Address security vulnerabilities in dependent packages. Resolves [issue 440](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/440).
+
+## 5.8.3
+
+- Address security vulnerabilities in dependent packages. Resolves [issue 437](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/437).
+
+## 5.8.2
+
+- Address security vulnerabilities in dependent packages. Resolves [issue 434](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/434).
+
+## 5.8.1
+
+- Addresses a security vulnerability in a dependency. Resolves [issue 427](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/427).
+
+## 5.8.0
+
+- System now sends an MQTT message every 60 seconds to report its status as online. Resolves [issue 423](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/423).
+
+## 5.7.0
+
+- Add support for `customEndpoint` on a trigger to support custom Deepstack models. Resolves [issue 416](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/416).
+- Support for glob patterns in trigger watchPatterns. Resolves [issue 412](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/412).
+
+## 5.6.1
+
+- Address a minor security vulnerability in a dependency. Resolves [issue 407](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/407).
+
+## 5.6.0
+
+- Support disabling auto-purge by specifying a `purgeInterval` of `0`. Resolves [issue 399](https://github.com/danecreekphotography/node-deepstackai-trigger/issues/399).
+
 ## 5.5.1
 
 - Resolve an issue where the system fails to start if no secrets file exists but the existing `settings.json` or `triggers.json` file uses
